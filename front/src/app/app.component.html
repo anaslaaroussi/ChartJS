@@ -1,0 +1,19 @@
+<button (click)="getData()">Prepare Data </button>
+<button (click)="showBarDaily()">Show Diagramme</button>
+<button (click)="hideDailyBar()">Hide daily bars</button>
+
+
+<div style="width: 50%">
+
+  <canvas id="myDailyChart" width="1000" height="400"></canvas>
+</div>
+
+<div style="width: 50%">
+
+  <canvas id="myHourlyChart" width="1000" height="400" *ngIf="show"></canvas>
+</div>
+
+
+
+
+
